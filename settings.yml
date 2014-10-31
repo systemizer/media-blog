@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+#: settings for liquidluck
+
+site:
+    name: Media Blog
+    url: "http://example.org/"
+
+config:
+    source: content
+    output: deploy
+    static: deploy/static
+    static_prefix: /static/
+
+author:
+    default: Rob McQueen
+
+#: active readers
+reader:
+    active:
+        - liquidluck.readers.markdown.MarkdownReader
+
+#: active writers
+writer:
+    active:
+        - liquidluck.writers.core.ArchiveWriter
+        - liquidluck.writers.core.StaticWriter
+        - liquidluck.writers.core.FileWriter
+
+#: theme variables
+theme:
+    name: momedia

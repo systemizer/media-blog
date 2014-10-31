@@ -1,0 +1,5 @@
+To setup:
+
+$ pip install -r requirements
+$ liquidluck build
+$ cd deploy && python -m SimpleHTTPServer
